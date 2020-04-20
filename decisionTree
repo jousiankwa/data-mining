@@ -1,0 +1,40 @@
+digraph G {
+	0 [label="length<=5.45
+Gain:0.53"]
+	1 [label="width<=2.8
+Gain:0.35"]
+	0 -> 1 [label=yes]
+	2 [label="length<=4.95
+Gain:0.19"]
+	1 -> 2 [label=yes]
+	3 [label="label:c2
+purity:0.66
+number:3"]
+	2 -> 3 [label=yes]
+	4 [label="label:c2
+purity:1.0
+number:4"]
+	2 -> 4 [label=no]
+	5 [label="label:c1
+purity:0.97
+number:45"]
+	1 -> 5 [label=no]
+	6 [label="width<=3.45
+Gain:0.21"]
+	0 -> 6 [label=no]
+	7 [label="label:c2
+purity:1.0
+number:90"]
+	6 -> 7 [label=yes]
+	8 [label="length<=6.5
+Gain:0.95"]
+	6 -> 8 [label=no]
+	9 [label="label:c1
+purity:1.0
+number:5"]
+	8 -> 9 [label=yes]
+	10 [label="label:c2
+purity:1.0
+number:3"]
+	8 -> 10 [label=no]
+}
